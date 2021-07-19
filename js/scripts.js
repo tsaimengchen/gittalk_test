@@ -24,9 +24,10 @@ const gitalk2 = new Gitalk({
 const gitalk3 = new Gitalk({
   clientID: '8fd8498a941292356865',
   clientSecret: '2b2c911559d732423cf7f008967b337ccae3d036',
-  repo: 'gittalk_test',      // The repository of store comments,
+  repo: 'gittalk_test_2',      // The repository of store comments,
   owner: 'littlecatt',
   admin: ['littlecatt'],
+  number: 1,
   id: location.href,      // Ensure uniqueness and length less than 50
   distractionFreeMode: false  // Facebook-like distraction free mode
 });
