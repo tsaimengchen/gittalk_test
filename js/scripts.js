@@ -28,7 +28,6 @@ const gitalk3 = new Gitalk({
   owner: 'littlecatt',
   admin: ['littlecatt'],
   id: location.href,      // Ensure uniqueness and length less than 50
-  number: 2,
   distractionFreeMode: false  // Facebook-like distraction free mode
 });
 
