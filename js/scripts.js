@@ -32,6 +32,19 @@ const gitalk3 = new Gitalk({
   distractionFreeMode: false  // Facebook-like distraction free mode
 });
 
+// Same OAuth application
+const gitalk4 = new Gitalk({
+  clientID: '91beda1e8145fbaebf77',
+  clientSecret: '6e4579604cb57847d0f11ed37d5260598d138568',
+  repo: 'gittalk_test',      // The repository of store comments,
+  owner: 'littlecatt',
+  admin: ['littlecatt'],
+  number: 2,
+  id: location.href,      // Ensure uniqueness and length less than 50
+  distractionFreeMode: false  // Facebook-like distraction free mode
+});
+
 gitalk1.render('gitalk-container-1');
 gitalk2.render('gitalk-container-2');
 gitalk3.render('gitalk-container-3');
+gitalk4.render('gitalk-container-4');
