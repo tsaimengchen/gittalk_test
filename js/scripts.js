@@ -60,9 +60,19 @@ const gitalk6 = new Gitalk({
   clientID: '62bb4d4edf5f91288b18',
   clientSecret: '8543c1f7bf44a6648b6cfeda69ad293f3272c70e',
   repo: 'gittalk_test',      // The repository of store comments,
-  owner: 'littlecatt',
-  admin: ['littlecatt'],
+  owner: 'tsaimengchen',
+  admin: ['tsaimengchen'],
   number: 4,
+  id: location.href,      // Ensure uniqueness and length less than 50
+  distractionFreeMode: false  // Facebook-like distraction free mode
+});
+const gitalk7 = new Gitalk({
+  clientID: '62bb4d4edf5f91288b18',
+  clientSecret: '8543c1f7bf44a6648b6cfeda69ad293f3272c70e',
+  repo: 'gittalk_test',      // The repository of store comments,
+  owner: 'tsaimengchen',
+  admin: ['tsaimengchen'],
+  number: 5,
   id: location.href,      // Ensure uniqueness and length less than 50
   distractionFreeMode: false  // Facebook-like distraction free mode
 });
@@ -72,3 +82,4 @@ const gitalk6 = new Gitalk({
 //gitalk4.render('gitalk-container-4');
 //gitalk5.render('gitalk-container-5');
 gitalk6.render('gitalk-container-6');
+gitalk7.render('gitalk-container-7');
